@@ -124,7 +124,7 @@ input[type="text"]::placeholder {
     transition: background-color 0.3s;
 }
 .delete{
-    background-color: #ff66b2;
+    background-color: #af046b;
     border: none;
     border-radius: 10px;
     color: white;
@@ -164,11 +164,9 @@ button:hover {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 220px;
     width: 200px;
-    padding: 15px;
     box-shadow: 0 4px 8px rgba(204, 0, 102, 0.2);
     transition: transform 0.3s;
 }
@@ -178,10 +176,11 @@ button:hover {
 }
 
 .card img {
-    margin-top: 30px;
-    width: 150px;
-    object-fit: contain;
-    border-radius: 10px;
+    width: 100%;
+    height: 70%;
+    object-fit: fill;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #9b9b9b3c;
 }
 
 .card h3 {

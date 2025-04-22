@@ -23,8 +23,8 @@ add.addEventListener('click', (e) => {
     card.appendChild(nameP)
     card.appendChild(_delete)
     card.classList = "card"
-    namePokemon.value = ""
-    img.value = ""
+    // namePokemon.value = ""
+    // img.value = ""
     card.addEventListener('dblclick', () => {
         let newUrl = prompt("Ingresa la nueva URL de la imagen del Pokémon");
         let imagen = card.querySelector('img');
@@ -32,5 +32,10 @@ add.addEventListener('click', (e) => {
             imagen.src = newUrl;
         }
     });
+    let close_button = card.querySelector(".delete");
+    close_button.addEventListener("click", () => {
+    card.remove(); 
+
+});
     document.getElementById('cards').appendChild(card)
 })
