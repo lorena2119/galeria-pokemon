@@ -23,7 +23,14 @@ add.addEventListener('click', (e) => {
     card.appendChild(nameP)
     card.appendChild(_delete)
     card.classList = "card"
-    document.getElementById('cards').appendChild(card)
     namePokemon.value = ""
     img.value = ""
+    card.addEventListener('dblclick', () => {
+        let newUrl = prompt("Ingresa la nueva URL de la imagen del Pokémon");
+        let imagen = card.querySelector('img');
+        if (newUrl) {
+            imagen.src = newUrl;
+        }
+    });
+    document.getElementById('cards').appendChild(card)
 })

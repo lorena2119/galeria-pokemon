@@ -1,4 +1,4 @@
-body{
+/* body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -17,7 +17,7 @@ body{
   cursor: pointer;
   display: inline-flex;
   width: 250px;
-  height: 300px;
+  height: 280px;
   justify-content: center;
   list-style: none;
   margin-top: 5%;
@@ -32,7 +32,7 @@ body{
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 18px;
-  gap: 40px;
+  gap: 10px;
 }
 
 .card:focus {
@@ -50,6 +50,7 @@ body{
 }
 
 img{
+    margin-top: 15px;
     object-fit: contain;
     width: 100%;
     height: 50%;
@@ -75,6 +76,115 @@ h2{
     align-items: center;
     cursor: pointer;
     position: absolute;
-    top: 5px;
+    top: 7px;
     right: 5px;
+} */
+body {
+    background-color: #fff5f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #99004d;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #cc007a;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #ffb3cc;
+}
+
+.inputs {
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #ff99cc;
+    border-radius: 10px;
+    outline: none;
+    background-color: #fff0f5;
+    color: #99004d;
+    font-size: 1em;
+}
+
+input[type="text"]::placeholder {
+    color: #cc6699;
+}
+
+#addPokemon {
+    padding: 10px 20px;
+    background-color: #ff66b2;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.delete{
+    background-color: #ff66b2;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* background-color: #df0a8a; */
+    color: white;
+    border: none;
+    /* border-radius: 5px;
+    font-size: 20px;
+     */
+    display: flex;
+    padding: 5px 13px 9px 13px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+button:hover {
+    background-color: #e0559f;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    background-color: #fff0f5;
+    border: 2px solid #ff99cc;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(204, 0, 102, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    margin-top: 30px;
+    width: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0 0 0;
+    color: #cc007a;
 }
